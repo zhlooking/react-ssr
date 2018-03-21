@@ -3,9 +3,9 @@ import React from 'react';
 import ReactDomServer from 'react-dom/server';
 import { StaticRouter, matchPath } from 'react-router-dom';
 import { ServerStyleSheet } from 'styled-components';
-import routes from './routes';
-import App from './App';
-import Html from './Html';
+import routes from './src/routes';
+import App from './src/App';
+import Html from './src/Html';
 
 const port = 3000;
 const server = express();
@@ -39,5 +39,6 @@ server.get('*', (req, res) => {
 
 });
 
-server.listen(port);
-console.log(`Serving at http://localhost:${port}`);
+server.listen(port, () => {
+  console.log(`Serving at http://localhost:${port}`);
+});
