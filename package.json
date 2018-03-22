@@ -1,8 +1,8 @@
 {
-  "name": "zhh-backend-render",
+  "name": "react-ssr",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "zhanghao <zhanghao@zcool.com.cn>",
+  "main": "server.js",
+  "author": "zhanghao <zhlookin@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start-dev": "NODE_ENV=development webpack -w & NODE_ENV=development nodemon ./dist/server",

@@ -36,7 +36,6 @@ server.get('*', (req, res) => {
         })
       );
     })
-
 });
 
 server.listen(port, () => {
